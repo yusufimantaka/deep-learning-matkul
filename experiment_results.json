@@ -1,0 +1,70 @@
+{
+  "baseline": {
+    "name": "Baseline MLP",
+    "params": 50890,
+    "train_loss": 0.04690822213888168,
+    "train_acc": 0.9867666959762573,
+    "val_loss": 0.09275484085083008,
+    "val_acc": 0.9718000292778015,
+    "test_loss": 0.09275481849908829,
+    "test_acc": 0.9718000292778015
+  },
+  "scenario_2a": {
+    "name": "L1 Regularization (lambda=0.0001)",
+    "rate": 0.0001,
+    "params": 50890,
+    "train_loss": 0.16843655705451965,
+    "train_acc": 0.9763000011444092,
+    "val_loss": 0.17596682906150818,
+    "val_acc": 0.9713000059127808,
+    "test_loss": 0.17596682906150818,
+    "test_acc": 0.9713000059127808
+  },
+  "scenario_2b": {
+    "name": "L2 Regularization (lambda=0.0001)",
+    "rate": 0.0001,
+    "params": 50890,
+    "train_loss": 0.08743824064731598,
+    "train_acc": 0.9826499819755554,
+    "val_loss": 0.11695819348096848,
+    "val_acc": 0.9718999862670898,
+    "test_loss": 0.11695820093154907,
+    "test_acc": 0.9718999862670898
+  },
+  "scenario_2c": {
+    "name": "Dropout (p=0.2)",
+    "rate": 0.2,
+    "params": 50890,
+    "train_loss": 0.09746483713388443,
+    "train_acc": 0.9692500233650208,
+    "val_loss": 0.08724226802587509,
+    "val_acc": 0.974399983882904,
+    "test_loss": 0.0872422382235527,
+    "test_acc": 0.974399983882904
+  },
+  "scenario_2d": {
+    "name": "Early Stopping (patience=3)",
+    "patience": 3,
+    "stopped_epoch": 15,
+    "best_epoch": 12,
+    "params": 50890,
+    "train_loss": 0.0401739776134491,
+    "train_acc": 0.9889833331108093,
+    "val_loss": 0.09206406772136688,
+    "val_acc": 0.9715999960899353,
+    "test_loss": 0.09206407517194748,
+    "test_acc": 0.9715999960899353
+  },
+  "scenario_2e": {
+    "name": "L1 (0.0001) + Dropout (0.2)",
+    "l1_rate": 0.0001,
+    "dropout_rate": 0.2,
+    "params": 50890,
+    "train_loss": 0.22305665910243988,
+    "train_acc": 0.9614499807357788,
+    "val_loss": 0.18695667386054993,
+    "val_acc": 0.9710999727249146,
+    "test_loss": 0.18695661425590515,
+    "test_acc": 0.9710999727249146
+  }
+}
